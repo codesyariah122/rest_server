@@ -40,7 +40,7 @@
     <div class="row">
 
         <div class="col-5">
-                    <h5>Hallo <?=$offline['name']?></h5>
+                    <h5><?=$offline['name']?></h5>
             <h6 class="text-danger blockquote_footer"><?=$status?></h6>
 
         </div>
