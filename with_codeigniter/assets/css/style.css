@@ -1,0 +1,48 @@
+.bg-image{
+	height: 100vh;
+}
+
+.login-page{
+	margin-top: 3.5rem;
+}
+
+#login {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#signin{
+	font-size: .9rem;
+	margin-bottom: 2.5rem;
+}
+
+#signin:hover {
+	background: rgba(222, 0, 1.2, 1.5);
+	border: none;
+	border-collapse: collapse;
+}
+
+#signup {
+	font-size: .9rem;
+	margin-bottom: 2.5rem;
+}
+
+#signup:hover {
+	background: rgba(255, 0, 255, 3.5);
+	border: none;
+	border-collapse: collapse;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; /* Set the fixed height of the footer here */
+	line-height: 60px; /* Vertically center the text there */
+	background-color: cornsilk;
+  }
+  
+
+  .jumbotron{
+	  background-color: chocolate;
+	  color: white;
+  }

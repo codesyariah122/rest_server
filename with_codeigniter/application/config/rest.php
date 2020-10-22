@@ -110,7 +110,7 @@ $config['rest_realm'] = 'REST API';
 |           authorization key
 |
 */
-$config['rest_auth'] = FALSE;
+$config['rest_auth'] = 'basic';
 
 /*
 |--------------------------------------------------------------------------
@@ -126,7 +126,7 @@ $config['rest_auth'] = FALSE;
 | Note: If 'rest_auth' is set to 'session' then change 'auth_source' to the name of the session variable
 |
 */
-$config['auth_source'] = 'ldap';
+$config['auth_source'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -323,7 +323,7 @@ $config['rest_keys_table'] = 'keys';
 |   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 |
 */
-$config['rest_enable_keys'] = FALSE;
+$config['rest_enable_keys'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -376,8 +376,7 @@ $config['rest_key_length'] = 40;
 | 2012/06/12. See RFC 6648 specification for more details
 |
 */
-$config['rest_key_name'] = 'X-API-KEY';
-
+$config['rest_key_name'] = 'user-api';
 /*
 |--------------------------------------------------------------------------
 | REST Enable Logging
@@ -404,7 +403,6 @@ $config['rest_key_name'] = 'X-API-KEY';
 |
 */
 $config['rest_enable_logging'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | REST API Logs Table Name
@@ -415,7 +413,6 @@ $config['rest_enable_logging'] = FALSE;
 |
 */
 $config['rest_logs_table'] = 'logs';
-
 /*
 |--------------------------------------------------------------------------
 | REST Method Access Control
@@ -486,7 +483,7 @@ $config['rest_logs_json_params'] = FALSE;
 |
 | See application/controllers/api/example.php for examples
 */
-$config['rest_enable_limits'] = FALSE;
+$config['rest_enable_limits'] = true;
 
 /*
 |--------------------------------------------------------------------------
